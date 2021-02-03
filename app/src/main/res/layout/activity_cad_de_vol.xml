@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadDeVol">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/justice"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CE000000"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/clFirstOne"
+        android:layout_marginHorizontal="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewFirstHome"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/ic_baseline_home"
+            android:layout_width="25dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="25dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="@+id/viewFirstBack"
+            app:layout_constraintRight_toRightOf="@+id/viewFirstHome"
+            android:text="Cas De Vol"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/viewFirstBack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/ic_baseline_arrow_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tvDelitTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="50dp"
+        android:text="Decription"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/clFirstOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="20dp"
+        android:fontFamily="@font/sans"
+        android:gravity="center_horizontal"
+        android:lineHeight="28dp"
+        android:text="Vous rentrez chez vous et vous constatez que vous avez été victime d’un cambriolage ? Malgré l’émotion que cela peut susciter, il est important de bien garder la tête sur les épaules et de ne pas perdre de temps pour réaliser les démarches nécessaires pour être indemnisé par votre assurance habitation. En effet, le vol figure parmi les sinistres dont les délais de déclaration sont les plus courts ! "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDelitTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnProcedure"
+        android:textStyle="bold"
+        android:text="PROCEDURE PLAINTE"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvStartFooter"
+        style="@style/ButtonStlye123"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvStartFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Copyrigth 2021 - ENSPM"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

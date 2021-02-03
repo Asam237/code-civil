@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".FirstHome">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/justice"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CE000000"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/clFirstOne"
+        android:layout_marginHorizontal="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewFirstHome"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/ic_baseline_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="@+id/viewFirstHome"
+            app:layout_constraintRight_toRightOf="@+id/viewFirstHelp"
+            android:text="Code Civil Et Penal"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+<!--        <View-->
+<!--            android:id="@+id/viewFirstSearch"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintRight_toLeftOf="@+id/viewFirstHelp"-->
+<!--            android:layout_marginRight="2dp"-->
+<!--            android:background="@drawable/ic_baseline_search"-->
+<!--            android:layout_width="25dp"-->
+<!--            android:layout_height="25dp"-->
+<!--            tools:ignore="MissingConstraints" />-->
+        <View
+            android:id="@+id/viewFirstHelp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/ic_baseline_help"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFirstFirst"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/clFirstOne"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lyFirstFirst"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="135dp"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            android:background="@drawable/bc_round_red"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="135dp"
+            tools:ignore="MissingConstraints">
+
+<!--            <LinearLayout-->
+<!--                android:paddingHorizontal="30dp"-->
+<!--                android:paddingVertical="40dp"-->
+<!--                android:background="@drawable/bc_round_green"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="hello"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/white" />-->
+<!--            </LinearLayout>-->
+
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@drawable/ic_baseline_library_books"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:text="Codes"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sans"
+                android:maxLength="10"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="15sp"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lyFirstSecund"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="135dp"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            android:background="@drawable/bc_round_red"
+            android:gravity="center"
+            android:layout_height="135dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@drawable/ic_baseline_favorite_24"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="Favoris"
+                android:maxLength="10"
+                android:fontFamily="@font/sans"
+                android:textSize="15sp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFirstSecund"
+        android:layout_marginHorizontal="15dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/clFirstFirst"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lyFirstThird"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="135dp"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            android:background="@drawable/bc_round_red"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="135dp"
+            tools:ignore="MissingConstraints">
+
+<!--            <LinearLayout-->
+<!--                android:paddingHorizontal="30dp"-->
+<!--                android:paddingVertical="40dp"-->
+<!--                android:background="@drawable/bc_round_green"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="hello"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="@color/white" />-->
+<!--            </LinearLayout>-->
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@drawable/ic_baseline_web"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:maxWidth="120dp"
+                android:text="Consultation en ligne"
+                android:textSize="15sp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sans"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lyFirstFour"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="135dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            android:background="@drawable/bc_round_red"
+            android:gravity="center"
+            android:layout_height="135dp"
+            tools:ignore="MissingConstraints">
+
+<!--            <LinearLayout-->
+<!--                android:paddingHorizontal="30dp"-->
+<!--                android:paddingVertical="40dp"-->
+<!--                android:background="@drawable/bc_round_violet"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Hello"-->
+<!--                    android:textColor="@color/white" />-->
+<!--            </LinearLayout>-->
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@drawable/ic_baseline_pan_tool"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:text="Infraction"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:fontFamily="@font/sans"
+                android:maxLength="12"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFirstThird"
+        android:layout_marginHorizontal="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/clFirstSecund"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lyFirstF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="135dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            android:background="@drawable/bc_round_red"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="135dp"
+            tools:ignore="MissingConstraints">
+
+            <!--            <LinearLayout-->
+            <!--                android:paddingHorizontal="30dp"-->
+            <!--                android:paddingVertical="40dp"-->
+            <!--                android:background="@drawable/bc_round_green"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content">-->
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="hello"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    android:textColor="@color/white" />-->
+            <!--            </LinearLayout>-->
+            <ImageView
+                android:layout_width="50dp"
+                android:src="@drawable/ic_baseline_storage"
+                android:layout_height="50dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:maxWidth="120dp"
+                android:text="Plainte"
+                android:textSize="15sp"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sans"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:maxLength="9"
+                android:singleLine="true"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvStartFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Copyrigth 2021 - ENSPM"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

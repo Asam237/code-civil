@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/chap2"
+        android:icon="@drawable/ic_baseline_arrow_forward"
+        app:showAsAction="always"
+        android:title="Chapitre 2"/>
+
+    <item app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_home"
+        android:id="@+id/home"
+        android:title="home" />
+
+<!--    <item android:id="@+id/chap3"-->
+<!--        android:title="Chapitre 3"/>-->
+</menu>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.codeapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_flag_of_cameroon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CodeApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Huissier"></activity>
+        <activity
+            android:name=".Tra3Chap"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Tra2Chap"
+            android:theme="@style/MyActionBar2" />
+        <activity
+            android:name=".Tra1Chap"
+            android:theme="@style/MyActionBar" />
+        <activity android:name=".LivreTravail" />
+        <activity
+            android:name=".Const3Chap"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Const2Chap"
+            android:theme="@style/MyActionBar2" />
+        <activity
+            android:name=".Const1Chap"
+            android:theme="@style/MyActionBar" />
+        <activity android:name=".LivreConstitution" />
+        <activity
+            android:name=".Chap6666CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap5555CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap4444CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity
+            android:name=".Chap3333CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap2222CodePenal"
+            android:theme="@style/MyActionBar2" />
+        <activity
+            android:name=".Chap111CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity android:name=".Livre3TT2" />
+        <activity android:name=".Livre3TT1" />
+        <activity android:name=".LivreCivil" />
+        <activity
+            android:name=".Chap1010CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity
+            android:name=".Chap99CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap88CodePenal"
+            android:theme="@style/MyActionBar2" />
+        <activity
+            android:name=".Chap77CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity
+            android:name=".Chap66CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap55CodePenal"
+            android:theme="@style/MyActionBar2" />
+        <activity
+            android:name=".Chap44CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity
+            android:name=".Chap33CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap22CodePenal"
+            android:theme="@style/MyActionBar2" />
+        <activity
+            android:name=".Chap11CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity android:name=".Livre2TT4" />
+        <activity android:name=".Livre2TT3" />
+        <activity android:name=".Livre2TT2" />
+        <activity android:name=".Livre2TT1" />
+        <activity android:name=".Livre2Titre" />
+        <activity
+            android:name=".Chap10CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity android:name=".Livre1TT4" />
+        <activity
+            android:name=".Chap9CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap8CodePenal"
+            android:theme="@style/MyActionBar2" />
+        <activity
+            android:name=".Chap7CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity android:name=".Livre1TT3" />
+        <activity
+            android:name=".Chap6CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap5CodePenal"
+            android:theme="@style/MyActionBar2" />
+        <activity
+            android:name=".Chap4CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity android:name=".Livre1TT2" />
+        <activity android:name=".Livre1TT1" />
+        <activity android:name=".Livre1Titre" />
+        <activity android:name=".Livres" />
+        <activity
+            android:name=".Chap3CodePenal"
+            android:theme="@style/MyActionBar3" />
+        <activity
+            android:name=".Chap2CodePenal"
+            android:theme="@style/MyActionBar2" /> <!-- Multiplier ceci pour les actions -->
+        <activity
+            android:name=".Chap1CodePenal"
+            android:theme="@style/MyActionBar" />
+        <activity android:name=".ProcedurePlainte" />
+        <activity android:name=".CadDeVol" />
+        <activity android:name=".DelitMineur" />
+        <activity android:name=".ChapterThreeView" />
+        <activity android:name=".ChapterTwoView" />
+        <activity android:name=".Dictionnaire" />
+        <activity android:name=".ChapterOneView" />
+        <activity android:name=".Penal" />
+        <activity android:name=".Infraction" />
+        <activity android:name=".Plainte" />
+        <activity android:name=".Consultation" />
+        <activity
+            android:name=".Help"
+            android:theme="@style/Help" />
+        <activity android:name=".FirstHome" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".StartedActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DelitMineur">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/justice"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CE000000"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/clFirstOne"
+        android:layout_marginHorizontal="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/viewFirstHome"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/ic_baseline_home"
+            android:layout_width="25dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="25dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="@+id/viewFirstBack"
+            app:layout_constraintRight_toRightOf="@+id/viewFirstHome"
+            android:text="Delit"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints" />
+
+        <View
+            android:id="@+id/viewFirstBack"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:background="@drawable/ic_baseline_arrow_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvDelitTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="50dp"
+        android:text="Decription"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/clFirstOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/tvDelitTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="50dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/sans"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="50dp"
+        android:textColor="@color/white"
+        android:text=" Le mineur qui n'a pas atteint l'âge de la majorité pénale est présumé irresponsable, mais, à partir d'un âge inférieur à celui de la majorité pénale, sa responsabilité pénale peut cependant être mise en jeu si certaines circonstances sont réunies."
+        android:lineHeight="28dp"
+        android:textSize="15sp"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnMineur"
+        style="@style/ButtonStlye123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:text="MINEUR"
+        app:layout_constraintBottom_toTopOf="@+id/btnMajeur"
+        tools:layout_editor_absoluteX="30dp" />
+    <Button
+        android:id="@+id/btnMajeur"
+        android:textStyle="bold"
+        android:text="MAJEUR"
+        app:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tvStartFooter"
+        style="@style/ButtonStlye123"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvStartFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="Copyrigth 2021 - ENSPM"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Help">
+
+    <TextView
+        android:id="@+id/tvOne"
+        android:layout_marginVertical="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="30dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:lineHeight="35dp"
+        android:layout_width="match_parent"
+        android:text="Bienvenu dans l'application 'Code Civil et Code Penal' !"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/clTwo"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvOne"
+        android:layout_marginVertical="40dp"
+        android:layout_marginTop="144dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivSec"
+            android:src="@drawable/ic_baseline_verified_user"
+            android:layout_width="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="30dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/sans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utilisez l'application 'Les codes' pour consulter tous les codes sans avoir besoins de vous connecter."
+            android:textSize="16sp"
+            android:lineHeight="30dp"
+            app:layout_constraintLeft_toRightOf="@+id/ivSec"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            tools:layout_editor_absoluteX="30dp"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/clThree"
+        app:layout_constraintTop_toBottomOf="@id/clTwo"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="40dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_baseline_verified_user"
+            android:id="@+id/ivSec1"
+            android:layout_width="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="30dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/sans"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/ivSec1"
+            android:text="Consultez en ligne le site de legifrance pour les dernieres mis-a-jour"
+            tools:layout_editor_absoluteX="30dp"
+            android:textSize="16sp"
+            android:lineHeight="30dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFour"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/clThree"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivSec2"
+            android:src="@drawable/ic_baseline_verified_user"
+            android:layout_width="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_height="30dp"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/sans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:lineHeight="30dp"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toRightOf="@+id/ivSec2"
+            android:textStyle="normal"
+            android:layout_marginTop="144dp"
+            tools:layout_editor_absoluteX="30dp"
+            android:text="L'auteur est decharge de toutes reponsabilites en cas de code non coherent ou onsolete "
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <Button
+        android:id="@+id/btnHome"
+        style="@style/ButtonStlye123"
+        android:layout_width="match_parent"
+        android:paddingVertical="20dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="@color/black"
+        android:text="valider"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

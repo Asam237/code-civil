@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CodeApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="buttonStyle">@style/ButtonStlye123</item>
+    </style>
+    <style name="ButtonStlye123" parent="android:style/Widget.Button">
+        <item name="android:textSize">19dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/btn_start</item>
+    </style>
+
+    <style name="ButtonHome" parent="android:style/Widget.Button">
+        <item name="android:src">@drawable/ic_baseline_home</item>
+    </style>
+
+
+    <!--Nouveau Style-->
+    <style name="MyActionBar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="title">Chapitre 1</item>
+        <item name="background">@color/black</item>
+    </style>
+    <style name="MyActionBar2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="title">Chapitre 2</item>
+        <item name="background">@color/black</item>
+    </style>
+    <style name="Help" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="title">Aide !</item>
+        <item name="background">@color/black</item>
+    </style>
+    <style name="MyActionBar3" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="title">Chapitre 3</item>
+        <item name="background">@color/black</item>
+    </style>
+    <style name="MyActionBar4" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="title">Chapitre 1</item>
+        <item name="background">@color/black</item>
+    </style>
+    <style name="MyActionBar5" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="title">Chapitre 2</item>
+        <item name="background">@color/black</item>
+    </style>
+    <style name="MyActionBar6" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="title">Chapitre 3</item>
+        <item name="background">@color/black</item>
+    </style>
+</resources>
