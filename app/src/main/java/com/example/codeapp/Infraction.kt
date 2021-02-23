@@ -10,6 +10,7 @@ class Infraction : AppCompatActivity() {
 
     lateinit var viewFirstHome: View;
     lateinit var clFirstSecund: ConstraintLayout;
+    lateinit var clFirstFour: ConstraintLayout;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,6 +18,13 @@ class Infraction : AppCompatActivity() {
 
         viewFirstHome = findViewById(R.id.viewFirstHome);
         clFirstSecund = findViewById(R.id.clFirstSecund)
+        clFirstFour = findViewById(R.id.clFirstFour);
+
+
+        clFirstFour.setOnClickListener {
+            val intent = Intent(this, Contravention::class.java)
+            startActivity(intent)
+        }
 
         viewFirstHome.setOnClickListener {
             val intent = Intent(this, FirstHome::class.java)

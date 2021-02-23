@@ -14,7 +14,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CodeApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Huissier"></activity>
+        <activity android:name=".DelitMajeur"></activity>
+        <activity
+            android:name=".Delit"
+            android:theme="@style/delit" />
+        <activity
+            android:name=".Contravention"
+            android:theme="@style/contravention" />
+        <activity android:name=".Huissier" />
         <activity
             android:name=".Tra3Chap"
             android:theme="@style/MyActionBar3" />

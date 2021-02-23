@@ -2,4 +2,7 @@
     <string name="app_name">CodeApp</string>
     <string name="droit_camerounais">Droit Camerounais</string>
     <string name="nul_n_est_cense_ignorer_la_loi">Protection des droits fondamentaux et droit à la jurisdictio constitutionnelle au Cameroun</string>
+    <string name="contravention">Les contraventions désignent les infractions les moins graves.\n
+        Ce sont aussi les infractions pénales les plus courantes. La plupart des contraventions sont des infractions à la sécurité routière.\n
+        Les contraventions sont classées en cinq classes, suivant leur gravité. Les contraventions de première classe sont les moins graves, les contraventions de cinquième classe les plus graves.</string>
 </resources>
